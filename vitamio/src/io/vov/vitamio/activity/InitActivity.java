@@ -16,6 +16,7 @@
 
 package io.vov.vitamio.activity;
 
+import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.app.ProgressDialog;
 import android.content.Context;
@@ -35,6 +36,7 @@ public class InitActivity extends Activity {
   private ProgressDialog mPD;
   private UIHandler uiHandler;
 
+  @SuppressLint("StaticFieldLeak")
   protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
     getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
